@@ -6,12 +6,15 @@ click_coordinates = {
     '2': (795, 750),
     '3': (890, 750),
     '4': (970, 750),
+    'f': (975, 645),
+    'e': (615, 705),
 }
 
 def perform_click(x, y):
     current_x, current_y = pyautogui.position()
     pyautogui.click(x, y)
     pyautogui.moveTo(current_x, current_y)
+    print(f"x: {current_x}, y: {current_y}")
 
 def on_key_press(key):
     try:
